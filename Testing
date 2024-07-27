@@ -1,4 +1,3 @@
--Phản hồi
 local responses = {
     ["report"] = "I don't care.",
     ["ban"] = "You can't scare me.",
@@ -825,6 +824,4 @@ end
 -- Đăng ký sự kiện nhận tin nhắn
 ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(data)
     onMessageReceived(data.FromSpeaker, data.Message)
-end
-Print('bigger');
 end
